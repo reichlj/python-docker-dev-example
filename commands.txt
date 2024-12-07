@@ -6,3 +6,13 @@ curl -X POST   http://localhost:8001/heroes/   -H "accept: application/json" -H 
 curl -X GET http://localhost:8001/heroes/  -H "accept: application/json"
 
 git remote set-url origin https://github.com/reichlj/python-docker-dev-example.git
+
+Use Kubernetes:
+
+kubectl apply -f docker-postgres-kubernetes.yaml
+
+kubectl apply -f docker-python-kubernetes.yaml
+
+kubectl get deployments
+
+kubectl get services
